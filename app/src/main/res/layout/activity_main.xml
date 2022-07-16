@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,43 +8,62 @@
     android:padding="16dp">
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Media Player_Me"
-        android:layout_centerHorizontal="true"
-        android:textSize="32sp"
-        android:textColor="@android:color/holo_blue_dark"/>
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Media Player_Me"-->
+<!--        android:textColor="@android:color/holo_blue_dark"-->
+<!--        android:textSize="32sp" />-->
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerVertical="true">
+        android:layout_width="374dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button"
+        <ImageButton
+            android:id="@+id/play"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Play"
-            android:onClick="music"/>
+            android:onClick="music"
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Pause"
-            android:onClick="music"/>
+            app:srcCompat="@drawable/play_btn" />
 
-        <Button
-            android:id="@+id/button3"
+        <ImageButton
+            android:id="@+id/pause"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Stop"
-            android:onClick="music"/>
+            android:onClick="music"
+            app:srcCompat="@drawable/pause_btn" />
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="music"
+            app:srcCompat="@drawable/stop_btn" />
+
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/imageButton6"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            app:srcCompat="@drawable/play_btn"-->
+        <!--            android:onClick="music"/>-->
+
+
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="389dp"
+        android:layout_height="249dp"
+        app:srcCompat="@drawable/music" />
+
+
 </RelativeLayout>

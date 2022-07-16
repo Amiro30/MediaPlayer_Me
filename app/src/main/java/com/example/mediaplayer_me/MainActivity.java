@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void music(View view) {
         switch (view.getId()){
-            case R.id.button:
+            case R.id.play:
                 if(mediaPlayer == null)
                 {
                     mediaPlayer = MediaPlayer.create(this, R.raw.song);
@@ -36,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
                 mediaPlayer.start();
                 break;
 
-            case R.id.button2:
+            case R.id.pause:
                 if(mediaPlayer != null)
                 {
                     mediaPlayer.pause();
                 }
                 break;
-            case R.id.button3:
+            case R.id.stop:
                 if(mediaPlayer != null)
                 {
                     mediaPlayer.stop();
